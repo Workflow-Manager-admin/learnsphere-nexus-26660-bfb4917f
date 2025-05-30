@@ -148,3 +148,46 @@ export 'Navigate' (imported as 'Navigate') was not found in 'react-router-dom' (
 
 webpack compiled with 13 errors
 Compiling...
+Failed to compile.
+
+Attempted import error: 'Link' is not exported from 'react-router-dom' (imported as 'Link').
+ERROR in ./src/App.js 36:37-41
+export 'Link' (imported as 'Link') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 156:87-91
+export 'Link' (imported as 'Link') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 183:30-36
+export 'BrowserRouter' (imported as 'Router') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 214:44-48
+export 'Link' (imported as 'Link') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 223:43-47
+export 'Link' (imported as 'Link') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 232:43-47
+export 'Link' (imported as 'Link') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 259:39-45
+export 'Routes' (imported as 'Routes') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 260:42-47
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 271:41-46
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 282:41-46
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 293:41-46
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 304:41-46
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 306:42-50
+export 'Navigate' (imported as 'Navigate') was not found in 'react-router-dom' (module has no exports)
+
+webpack compiled with 13 errors
