@@ -1,0 +1,4 @@
+{
+    "command": "npm install && npx tsc --noEmit && npm test -- --ci",
+    "working_directory": "/home/kavia/workspace/code-generation/learnsphere-nexus-26660-bfb4917f/learnsphere_nexus"
+}
