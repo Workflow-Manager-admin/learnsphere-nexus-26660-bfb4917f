@@ -21,3 +21,19 @@ webpack compiled successfully
 Compiling...
 Compiled successfully!
 webpack compiled successfully
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/learnsphere-nexus-26660-bfb4917f/learnsphere_nexus/src'
+ERROR in ./src/App.js 5:0-90
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/learnsphere-nexus-26660-bfb4917f/learnsphere_nexus/src'
+
+webpack compiled with 1 error
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/learnsphere-nexus-26660-bfb4917f/learnsphere_nexus/src'
+ERROR in ./src/App.js 5:0-90
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/learnsphere-nexus-26660-bfb4917f/learnsphere_nexus/src'
+
+webpack compiled with 1 error
