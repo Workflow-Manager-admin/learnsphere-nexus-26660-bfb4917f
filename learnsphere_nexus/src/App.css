@@ -1,16 +1,19 @@
 :root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --primary: #ce5a5a;
+  --secondary: #c5c7d3;
+  --accent: #000000;
+  --background: #fff;
+  --text-main: #222;
+  --text-secondary: #3b3b3b;
+  --border-color: #ececec;
+  --focus: #be2525;
 }
 
 body {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  background-color: var(--kavia-dark);
-  color: var(--text-color);
+  background: var(--background);
+  color: var(--text-main);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,11 +22,21 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--background);
+  color: var(--text-main);
 }
 
+/* Accessible focus styles */
+:focus {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Navbar styles */
 .navbar {
-  background-color: var(--kavia-dark);
-  padding: 16px;
+  background-color: var(--background);
+  color: var(--accent);
+  padding: 18px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,76 +46,142 @@ body {
   width: 100%;
   box-sizing: border-box;
   z-index: 100;
+  min-height: 60px;
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.35rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  color: var(--accent);
+  letter-spacing: -1.5px;
 }
 
 .logo-symbol {
-  color: var(--kavia-orange);
+  color: var(--primary);
+  font-size: 1.5em;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 28px;
   width: 100%;
   box-sizing: border-box;
 }
 
+/* Hero area */
 .hero {
-  padding-top: 120px;
-  padding-bottom: 64px;
+  padding-top: 110px;
+  padding-bottom: 50px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
 
 .subtitle {
-  color: var(--kavia-orange);
-  font-weight: 500;
-  font-size: 1.1rem;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .title {
   font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.13;
   margin: 0;
+  color: var(--accent);
 }
 
 .description {
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 1.12rem;
+  line-height: 1.55;
   color: var(--text-secondary);
-  max-width: 600px;
-  margin-bottom: 16px;
+  max-width: 540px;
+  margin: 0 auto 1.25em auto;
 }
 
 .btn {
-  background-color: var(--kavia-orange);
-  color: white;
+  background-color: var(--primary);
+  color: #fff;
   border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: 500;
+  border-radius: 5px;
+  padding: 11px 26px;
+  font-size: 1.08rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.18s ease, color 0.18s;
+  box-shadow: 0 2px 8px #00000011;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 12px;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.btn:hover {
-  background-color: #FF8B4D;
+.btn:focus-visible, .btn:focus {
+  outline: 2px solid var(--accent);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #b74a4a;
+  color: #fff;
 }
 
 .btn-large {
-  padding: 12px 24px;
-  font-size: 1.1rem;
+  padding: 16px 32px;
+  font-size: 1.20rem;
+}
+
+nav .nav-link, nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 18px;
+  font-size: 1.08rem;
+  transition: color 0.18s;
+}
+
+nav .nav-link:hover, nav a:hover {
+  color: var(--primary);
+}
+
+.main-content {
+  flex: 1;
+  background: var(--background);
+}
+
+/* Responsive adjustments */
+@media (max-width: 760px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 25px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Smooth transitions */
+* {
+  transition:
+    color 0.12s,
+    background 0.12s,
+    border-color 0.12s;
 }
